@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="Description" content="小学期用FunCode制作ArpgPal的历程。"/>
+    <link rel="shortcut icon" href="http://zheng0716.com/favicon.ico"/>
+    <title>FunCode展示</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <!-- <link href="http://impress.github.io/impress.js/css/impress-demo.css" rel="stylesheet"/> -->
+    <link href="./static/css/impress-demo.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="impress-not-supported">
+        <div class="fallback-message"><p>请搭配<b>现代浏览器</b>食用，口感更加~~~</p></div>
+    </div>
+    <div class="hint">
+        <p>- 北科计1403班第八组 -</p>
+    </div>
+    <div id="impress">
+        <div id="bored" class="step slide" data-x="0" data-y="0">
+            ArpgPal - 仙剑奇侠传<br />
+            <img src="./static/image/start.jpg"/>
+        </div>
+        <div class="step slide" data-x="-1000" data-y="500" data-rotate="30">
+            <b><u>"Pal" means:</u><br /></b>
+            &nbsp;&nbsp;Paladin<br />
+            &nbsp;&nbsp;<sup>*</sup>骑士，游侠<br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其实这里的Pal指的是我最爱的一个PC游戏系列，国产RPG经典之作：<br />
+            <center>
+                <b>《仙剑奇侠传》</b>系列<br />
+                <img src="./static/image/PalLogo.jpg"/>
+            </center>
+        </div>
+        <div class="step slide" data-x="1000" data-y="500" data-rotate="-30">
+            <b><u>"Arpg" means:</u><br /></b>
+            &nbsp;&nbsp;Action Role Playing Game<br />
+            &nbsp;&nbsp;<sup>*</sup>动作角色扮演<br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区别与传统的Rpg角色扮演类游戏，Arpg最大的特色是其战斗系统的不同：<br />
+            <center>
+                <b>即时</b>战斗取缔<b>回合制</b>战斗<br />
+                带给玩家更紧张刺激的游戏体验<br />
+                <img src="./static/image/Zelda&Grandia.jpg"/>
+            </center>
+        </div>
+        <div  id="ing" class="step" data-x="0" data-y="1200" data-scale="2">
+            &nbsp;&nbsp;&nbsp;&nbsp;仙剑是我最爱的经典游戏，但其回合制的战斗模式常常被众人吐槽<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;于是我就想，何不趁这次机会，做一款<b class="rotating"><span style="color: #dddd00">即时战斗制</span></b>的仙剑呢？
+        </div>
+        <div class="step" data-x="-1000" data-y="1500" data-rotate-y="60">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们对这个计划做了详细的分析，发现要做这样一款Arpg，关键的技术难点在于：<br />
+            <center>如何处理<span style="color: #ff0000">冒险地图</span>与<span style="color: #ff0000">地形碰撞</span></center>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;幸运的，我们发现FunCode其实是有Tilemap（瓦片地图）的概念的。<br />
+            虽然这一模块还未完善，但至少已经满足制作Arpg的基本条件了
+        </div>
+        <div class="step" data-x="1000" data-y="1500" data-rotate-y="-60">
+            问题解决后，我们做了成员分工：<br />
+            <span style="color: #339966">姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;负责的方面&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;工作量<br /></span>
+            陈正&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;程序、游戏策划&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%<br />
+            杨衍康&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;素材、视频剪辑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%<br />
+            何永先&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文案、游戏测试&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%
+        </div>
+        <div class="step" data-x="0" data-y="2200">
+            <center>
+                然后，我们就朝着这个目标：<br>
+                <span style="color: #6666ff">基于经典游戏《仙剑奇侠传》的设定<br />融入动作角色扮演类游戏要素<br />做一款独特的ArpgPal</span><br />
+                开始了小学期FunCode的学习之旅~~~
+            </center>
+        </div>
+        <div class="step slide" data-x="3200" data-y="2200" data-rotate="180">
+            <b><u>游戏制作过程中，我们实在是遇到了不少困难：<br /></u></b>
+            &nbsp;&nbsp;&nbsp;&nbsp;对于这样一款Arpg，我们完全没办法在示例工程里找到模板参照，期间遇到的许多问题都不得不自己想办法，从零开始编程设计<br /><br />
+            <center>
+                程序、游戏策划：陈正<br />
+                <img src="./static/image/ChenZheng.jpg"/>
+            </center>
+        </div>
+        <div class="step slide" data-x="4200" data-y="1700" data-rotate="210">
+            <b><u>不止是主程序的我，我的两位同伴也一样很辛苦：<br /></u></b>
+            &nbsp;&nbsp;&nbsp;&nbsp;素材的收集整理、音乐音效的制作、游戏的bug调试等方方面面的诸多问题，绝不是一个人能完成的工作量<br /><br />
+            <center>
+                素材、视频剪辑：杨衍康<br />
+                <img src="./static/image/YangYanKang.jpg"/>
+            </center>
+        </div>
+        <div class="step slide" data-x="2200" data-y="1700" data-rotate="150">
+            <b><u>大家都很有干劲，焕发着C语言程序客上从未有过的活力：<br /></u></b>
+            &nbsp;&nbsp;&nbsp;&nbsp;从角色动起来、怪物具备Ai，到技能释放、Boss围追，我们一点一点的看着由我们亲手搭建起的游戏世界成型<br /><br />
+            <center>
+                文案、游戏测试：何永先<br />
+                <img src="./static/image/HeYongXian.jpg"/>
+            </center>
+        </div>
+        <div class="step" data-x="3200" data-y="1300" data-scale="1.5" data-rotate="180">
+            <center><img src="./static/image/Us.jpg"/></center>
+        </div>
+        <div class="step" data-x="3200" data-y="1000" data-rotate="180" data-scale="2">
+            <br /><br /><br /><br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;而这些也让我们明白了<b class="positioning"><span style="color: #aa00aa">团队与合作</span></b>的重要，明白了很多事情绝不是一个人就能独自完成
+        </div>
+        <div class="step" data-x="4200" data-y="0" data-rotate="180" data-rotate-y="-30" style="font-size: 30px;">
+            <b><u>成果展示(一） - 游戏中主要有以下八个系统：</u></b><br />
+            1、Ai系统，包括随机扫荡、遇敌追击、自动寻路、回巢防守等等<br />
+            2、奖励系统，通过杀怪、开宝箱等获取金币、经验<br />
+            3、商店系统，可购买装备、补充体力、回复魔法<br />
+            4、收集系统，玩家需集齐仙剑五灵珠，才能开启通向终点的道路<br />
+            5、合作系统，双人同时进行游戏，合作战斗，并有一定的交互<br />
+            6、战斗系统，包括物理攻击、魔法技能、施法警告等<br />
+            7、成长系统，玩家可以通过积累经验提升等级，获得力量加强、技能进阶<br />
+            8、职业系统，玩家可扮演近战战士（李逍遥）、远程法师（赵灵儿）两种职业
+        </div>
+        <div class="step" data-x="3200" data-y="0" data-rotate="180" data-rotate-y="-30" style="font-size: 30px;">
+            <b><u>成果展示(二） - 游戏主要特色：</u></b><br />
+            1、即时战斗，玩家在地图上明雷遇敌，借助平砍、远法、战技与敌人战斗<br />
+            2、Ai完善，敌人会采取游荡、追击、守卫、寻路等多种策略与玩家较量<br />
+            3、元素丰富，游戏中八大系统，多项元素，不落入传统的砍啥-升级的单调模式<br />
+            4、地图复杂，提供玩家很大的探索空间，不限制玩家的行动路线<br />
+            5、光效音效，精心准备图片、粒子、音源素材，注重游戏细节体验
+        </div>
+        <div class="step" data-x="2200" data-y="0" data-rotate="180" data-rotate-y="-30" style="font-size: 30px;">
+            <b><u>成果展示(三） - 工作量总结：</u></b><br />
+            1、七个.cpp文件2000多行代码，分别管理关卡流程、游戏逻辑、Ai算法、链表数据、功能函数、玩家控制以及商店系统等模块<br />
+            2、Ai生物28种，中立、敌对、Boss等等行为各有不同，斜四方向行走姿态各异<br />
+            3、特效技能20种，由一系列序列帧组成，播放效果平滑绚丽<br />
+            4、图片资源70多个，音效资源10个，精选自几百个预备素材<br />
+            5、PPT展示 + Word文档说明 + 5张Excel表格 + 600M游戏试玩视频，文案资料相当丰富（还有现在您正在看的这份H5）
+        </div>
+        <div id="overview" class="step" data-x="1400" data-y="1000" data-scale="4.5"></div>
+    </div>
+    <audio src="./static/audio/DieLian.mp3" loop autoplay>蝶恋.mp3</audio>
+    <!-- <script src="http://impress.github.io/impress.js/js/impress.js"></script> -->
+    <script src="./static/js/impress.js"></script>
+    <script>impress().init();</script>
+    <script>//$("audio").load();</script>
+</body>
